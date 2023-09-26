@@ -1,0 +1,102 @@
+
+/* Reset de certains styles par défaut des navigateurs */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles globaux */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+h2 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+/* Styles pour les animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+/* Styles pour les écrans de petite taille (moins de 600px) */
+@media (max-width: 600px) {
+    header, section, footer {
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.2em;
+    }
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px solid #4CAF50;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #4CAF50;
+    display: block;
+    margin: 5px 0;
+}
+
